@@ -1,0 +1,21 @@
+{
+  "name": "queue-forge",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "src/services/*",
+    "src/shared/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev" : "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

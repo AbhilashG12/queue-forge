@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "es2024",
+    "types": ["node"],
+    
+    "baseUrl": ".", 
+    "paths": {
+      "@platform/*": ["src/shared/*"]
+    },
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Your Strict Options */
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    
+    /* Since this is a backend project, you can remove "jsx" 
+       unless you plan on SSR with React in the gateway. */
+    "jsx": "react-jsx" 
+  },
+  "exclude": ["node_modules", "**/dist/*"]
+}

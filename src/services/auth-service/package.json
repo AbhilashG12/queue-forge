@@ -1,6 +1,13 @@
 {
   "name": "auth-service",
+  "type": "module",
   "dependencies": {
-    "@platform/logger": "workspace:*" 
+    "@platform/logger": "workspace:*",
+    "@prisma/client": "^7.4.2",
+    "argon2": "^0.44.0",
+    "express": "^5.2.1",
+    "jest": "^30.2.0",
+    "prisma": "^7.4.2",
+    "zod": "^4.3.6"
   }
 }

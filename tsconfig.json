@@ -2,11 +2,14 @@
   "compilerOptions": {
     "module": "NodeNext",
     "target": "es2024",
-    "types": ["node"],
+    "types": ["jest","node"],
     
     "baseUrl": ".", 
     "paths": {
-      "@platform/*": ["src/shared/*"]
+      "@/*": ["src/services/auth-service/src/*"], 
+      "@platform/logger": ["src/shared/logger/src/index.ts"],
+      "@platform/errors": ["src/shared/errors/src/index.ts"],
+      "@platform/middleware": ["src/shared/middleware/src/index.ts"]
     },
 
     "sourceMap": true,
@@ -17,7 +20,7 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "strict": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "moduleDetection": "force",
     "skipLibCheck": true,

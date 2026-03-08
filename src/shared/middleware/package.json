@@ -1,0 +1,13 @@
+{
+  "name": "@platform/middleware",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@platform/errors": "workspace:*",
+    "@platform/logger": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}

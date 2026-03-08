@@ -1,5 +1,10 @@
 {
   "name": "@platform/logger",
   "version": "1.0.0",
-  "main": "index.js"
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0"
+  }
 }

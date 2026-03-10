@@ -8,6 +8,7 @@ export interface UserProps {
 }
 
 export class User {
+  
   public readonly props: {
     id: string;
     email: string;

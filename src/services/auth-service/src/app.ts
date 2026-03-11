@@ -15,6 +15,8 @@ const authController = new AuthController(registerUSer);
 
 app.post("/auth/register",(req,res,next)=>authController.register(req,res,next));
 
+app.get('/health', (req, res) => res.send('OK'));
+
 app.use((err: any, req: any, res: any, next: any) => {
   const status = err.statusCode || 500;
   res.status(status).json({ error: err.message || 'Internal Server Error' });

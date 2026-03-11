@@ -13,7 +13,7 @@ export class RegisterUser{
         private passwordHasher : any
     ){}
 
-    async execute(request:RegisterRequest) :Promise<void>{
+    async execute(request:RegisterRequest){
         const exists = await this.userRepo.findByEmail(request.email);
         if(exists) throw new ConflictError("User Already Exists !");
 
@@ -28,5 +28,11 @@ export class RegisterUser{
         })
 
         await this.userRepo.save(user);
+
+        return {
+        id: user.props.id,
+        email: user.props.email,
+        role: user.props.role
+        };  
     }
 }

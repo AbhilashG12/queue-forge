@@ -2,16 +2,20 @@
   "name": "auth-service",
   "type": "module",
   "scripts": {
-  "dev": "tsx watch src/server.ts"
-},
+    "dev": "tsx watch --env-file=.env src/server.ts"
+  },
   "dependencies": {
-    "@platform/logger": "workspace:*",
     "@platform/errors": "workspace:*",
+    "@platform/logger": "workspace:*",
     "@platform/middleware": "workspace:*",
+    "@prisma/adapter-mariadb": "^7.4.2",
     "@prisma/client": "^7.4.2",
     "argon2": "^0.44.0",
+    "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "jest": "^30.2.0",
+    "mariadb": "^3.5.2",
+    "mysql2": "^3.19.1",
     "prisma": "^7.4.2",
     "zod": "^4.3.6"
   }
